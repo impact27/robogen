@@ -53,10 +53,7 @@ namespace robogen {
 		
 		// Compute distance from light source
 		osg::Vec3 curPos = this->getRobot()->getCoreComponent()->getRootPosition();
-		osg::Vec3 lightSourcePos = this->getEnvironment()->getLightSources()[0]->getPosition();
-		
-		osg::Vec3 temp = curPos - lightSourcePos;
-		this->distances_[curTrial_] += temp.length();
+		this->distances_[curTrial_] += curPos.z();
 		
 		return true;
 	}
@@ -73,13 +70,14 @@ namespace robogen {
 	
 	double ClimbingScenario::getFitness() {
 		
-		double fitness = 1000;//0;
+		double fitness = 0;//1000;
 		for (unsigned int i = 0; i < distances_.size(); ++i) {
-			double trialFit = -1.0 * distances_[i]/this->getRobogenConfig()->getTimeSteps();
-			if (trialFit < fitness)
-				fitness = trialFit;
+			fitness+=distances_[i]/this->getRobogenConfig()->getTimeSteps();
+//			double trialFit =  distances_[i]/this->getRobogenConfig()->getTimeSteps();
+//			if (trialFit < fitness)
+//				fitness = trialFit;
 		}
-		return fitness;
+		return fitness/distances_.size();
 		// We transform everything into a maximization problem
 		//return -1*(fitness/distances_.size());
 	}
