@@ -40,7 +40,7 @@ namespace robogen {
 		env->setAmbientLight(10);
 		std::vector<boost::shared_ptr<LightSource> > lightSources;
 		lightSources.push_back(boost::shared_ptr<LightSource>(
-															  new LightSource(odeSpace, osg::Vec3(0, 0,
+															  new LightSource(odeSpace, osg::Vec3(getRobogenConfig()->getLightSourceX(), getRobogenConfig()->getLightSourceY(),
 																								  this->getRobogenConfig()->getLightSourceHeight()), 100)));
 		env->setLightSources(lightSources);
 		

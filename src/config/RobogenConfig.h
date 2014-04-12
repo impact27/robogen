@@ -45,7 +45,7 @@ class RobogenConfig {
 public:
 
 	enum SimulationScenario {
-		CHASING, RACING
+		CHASING, RACING, CLIMBING
 	};
 
 	/**
@@ -177,6 +177,8 @@ public:
 			ret.set_scenario("chasing");
 		} else if (scenario_ == RACING) {
 			ret.set_scenario("racing");
+		} else if (scenario_ == CLIMBING) {
+			ret.set_scenario("climbing");
 		}
 		ret.set_terrainlength(terrain_->getLength());
 		ret.set_terrainwidth(terrain_->getWidth());

@@ -216,6 +216,8 @@ boost::shared_ptr<RobogenConfig> ConfigurationReader::parseConfigurationFile(
 		simulationScenario = RobogenConfig::RACING;
 	} else if (scenario.compare("chasing") == 0) {
 		simulationScenario = RobogenConfig::CHASING;
+	} else if (scenario.compare("climbing") == 0) {
+		simulationScenario = RobogenConfig::CLIMBING;
 	} else {
 		std::cout << "Undefined 'scenario' parameter in '" << fileName << "'"
 				<< std::endl;
@@ -395,6 +397,8 @@ boost::shared_ptr<RobogenConfig> ConfigurationReader::parseRobogenMessage(
 		simulationScenario = RobogenConfig::RACING;
 	} else if (scenario.compare("chasing") == 0) {
 		simulationScenario = RobogenConfig::CHASING;
+	} else if (scenario.compare("climbing") == 0) {
+		simulationScenario = RobogenConfig::CLIMBING;
 	} else {
 		std::cout << "Undefined 'scenario' parameter" << std::endl;
 		return boost::shared_ptr<RobogenConfig>();

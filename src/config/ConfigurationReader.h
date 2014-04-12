@@ -50,7 +50,7 @@ public:
 	 * Reads the configuration file for ROBOGEN.
 	 * The file must contain the following parameterName=parameterValues pairs
 	 *
-	 * scenario=<"racing"|"chasing">
+	 * scenario=<"racing"|"chasing"|"Climbing">
 	 * timeStep=FLOAT
 	 * nTimeSteps=FLOAT
 	 * terrainType=<"flat"|"rugged">

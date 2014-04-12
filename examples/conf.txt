@@ -6,3 +6,6 @@ terrainLength=2
 terrainWidth=2
 obstaclesConfigFile=obstacles.txt
 startPositionConfigFile=startPos.txt
+lightSourceHeight=1
+lightSourceX=1
+lightSourceY=1
