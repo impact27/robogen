@@ -54,6 +54,9 @@
 #include "Robot.h"
 #include "robogen.pb.h"
 
+#include "MyManipulator.h"
+#include <osg/PolygonMode>
+
 
 using namespace robogen;
 
@@ -415,13 +418,19 @@ int main(int argc, char *argv[]) {
 	// Setup OSG viewer
 	// ---------------------------------------
 
+//	osg::ref_ptr<osg::PolygonMode> pm = new osg::PolygonMode;
+//	pm->setMode(osg::PolygonMode::FRONT_AND_BACK,osg::PolygonMode::LINE);
+//	root->getOrCreateStateSet()->setAttribute(pm);
+//	osg::StateAttribute
+//	root->getOrCreateStateSet()->setTextureAttributeAndModes(<#unsigned int unit#>, <#osg::StateAttribute *attribute#>);
 	viewer.setSceneData(root.get());
 
 	viewer.realize();
 
 	if (!viewer.getCameraManipulator()
 			&& viewer.getCamera()->getAllowEventFocus()) {
-		viewer.setCameraManipulator(new osgGA::TrackballManipulator());
+		viewer.setCameraManipulator(new MyManipulator(robot));
+//		viewer.setCameraManipulator(new osgGA::TrackballManipulator());
 	}
 
 	viewer.setReleaseContextAtEndOfFrameHint(false);
@@ -462,7 +471,9 @@ int main(int argc, char *argv[]) {
 	while (!viewer.done() && !keyboardEvent->isQuit()) {
 
 		viewer.frame();
-
+		
+//		myManipulator->setCenter(osg::Vec3d(scenario->getRobot()->getCoreComponent()->getRootPosition()));
+		
 		if (t < configuration->getSimulationTime()
 				&& !keyboardEvent->isPaused()) {
 

@@ -1,0 +1,3871 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		9ACA4DA4C488435599C41BF9 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7F191E39FBC942D1B2BD2AB2 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				AEE993F917CA4BF4AAD61E56 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		AB2F9EDA1740476E8F293A12 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A8B2C54146B841F1A346B3D0 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				8184D81189714E78847F9F3E /* CMake Rules */,
+			);
+			dependencies = (
+				977F81C4CA50464D942D1CEE /* PBXTargetDependency */,
+				9E79070B8C9F474F9336DB3B /* PBXTargetDependency */,
+				6951A37242794F36ABECD536 /* PBXTargetDependency */,
+				6A1C0DA9DDBF466384566B45 /* PBXTargetDependency */,
+				4A2A5DF7D34F478F90A03056 /* PBXTargetDependency */,
+				C9D5D4DE47AF4D16943F4D00 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		065D8C5EC5DF4D15989AD39A /* TouchSensor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD82EB2E90B143D7A51D8C97 /* TouchSensor.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0B27D8E9B2AB4666A743FC80 /* ActiveCardanRenderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB8B9FAFA88B473FA4172B42 /* ActiveCardanRenderModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0BE4CDF891E742FC82C24A29 /* LightSensorRenderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63E2DEF327054C679C4F4D28 /* LightSensorRenderModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0D4A8B32A6C440B098EBAD25 /* NeuronRepresentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 206A72E5D18C4F74B26AB395 /* NeuronRepresentation.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0D4C3A81211742F18B8F9310 /* Robot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 688747C9BA70404E84C331D8 /* Robot.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0E9102E356EA4AF9BEE317AB /* EvolverLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBE4111119C94527827CBDB4 /* EvolverLog.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		110F233AD91C4FC7BED0DEAD /* RobogenUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8539AD213FF741CDA4E72BF4 /* RobogenUtils.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1193A4AAF5774C5AA4AFEA9A /* RobogenServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98CC8E794D8D4A0D83501066 /* RobogenServer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		12C65C5FDFCB4629A300A885 /* ActiveWhegRenderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B3B713BA74B8DA15B7826 /* ActiveWhegRenderModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1AD822C5430348C09EAA1DC3 /* ImuSensor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6EE3D1E21CF4BCB8B9A7BF9 /* ImuSensor.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1F3EE1FBC4E2443294859DAE /* LightSensor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 589177FFA42142BC98CADB74 /* LightSensor.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1FDC27DB17C645EBA4F4057B /* FileViewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CB044FAF81440FBF89D8DE /* FileViewer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		24F1897986E8431E98441D1B /* Mutator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F16E18B35C1A42D382D0649C /* Mutator.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		28AE0E4802154A65BDDFE3AC /* HingeRenderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32D6DC4A7EE449A9AF312262 /* HingeRenderModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2BDA66CEDFDA4A1184DFAB7C /* FileViewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CB044FAF81440FBF89D8DE /* FileViewer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2D2CFAB033D34B92BE30C945 /* robogen.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 95F3198E5A174138B825AA2E /* robogen.pb.cc */; settings = {COMPILER_FLAGS = ""; }; };
+		2E694224FD344B438AEFE8CD /* PassiveWheelRenderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBAB206C26C94309B343DA32 /* PassiveWheelRenderModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2E9CBF20B0AA4E2A95B85553 /* ArduinoNNCompiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2385EE6D26984282A9E5CFAE /* ArduinoNNCompiler.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		301A23A5B5424DC898298273 /* ServoMotor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2781E663ADC4AAF8B81C8ED /* ServoMotor.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		329A2642793D4195823BDDA8 /* ActiveHingeModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1FDA9B5590C4687A1DB2BF2 /* ActiveHingeModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		330871B0CD09446CBBC10F19 /* TouchSensorModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06ABC8B242714DE59140D7D7 /* TouchSensorModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3B73F0FE52864789B4DFFE12 /* ScenarioFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5200AA2ACB64CBF8579DB4F /* ScenarioFactory.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3DB02AE6051B476496BE306F /* CoreComponentModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D49C87D04FF4C8CADE6F4F5 /* CoreComponentModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3EBC605A931B40A587B5F189 /* DeterministicTournament.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22196B61EC414F38A434BADD /* DeterministicTournament.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4610FC90D5774D18992C6252 /* Scenario.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAE769B5823F49668CEFADAB /* Scenario.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		48EEC199AAB94E54846F09CD /* ActiveWheelRenderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90CD67E11D2449E38780DE72 /* ActiveWheelRenderModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4EFA04FADF8848B7B7C0FC4F /* ParametricBrickModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFEA8C5EA5FE4944AC00899C /* ParametricBrickModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		51554A75183D4069BC508C6D /* CardanCrossCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F29D26F6C8E448A7A6C1A737 /* CardanCrossCallback.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		547D1D5235FF4872AA2723C7 /* ClimbingScenario.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83B393F65084457AB0CA863E /* ClimbingScenario.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5608E02BC9014663B97FB6BA /* Motor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA423F3C0A474D709DCF0C6F /* Motor.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5657766CE1D84084BD366FE0 /* BodyCompiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 165DF183D8D240F2846023AA /* BodyCompiler.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		574E2378D3CB42618A958A32 /* CardanModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD58636A05BE4E4B8AE700A3 /* CardanModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5A1D22EFF1784DD4B7731EEC /* PassiveWheelModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B422253615DD4985AA900EB8 /* PassiveWheelModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5B2C68103735412C8052210F /* NeuralNetworkRepresentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE4F325039C64CBDACB09992 /* NeuralNetworkRepresentation.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5CA9D12EBEC34021933CE82A /* json2pb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EE4E969C87C45CBA4D80D77 /* json2pb.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5E622C2FE65C446C85C088A8 /* ServerViewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0D1B99E4E8048B49822BC79 /* ServerViewer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5F28CAEB59B347B0BD15C2C3 /* MyManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6F80434D5904519AD1882C9 /* MyManipulator.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6A631280CC2046B797FF5CB8 /* BoxObstacle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BD9A7A663764525A2938773 /* BoxObstacle.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6BE85F64ECC24BBA98FF53DD /* ChasingScenario.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED33BDAC9DD74A1AAE06C1A2 /* ChasingScenario.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6C8C32859109495490C01DF7 /* LightSourceRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DAE71B344174DBD989FB5A4 /* LightSourceRender.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		71EC1A9D3EF4430E83251E52 /* RobotRepresentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDC3D864080E4C8F88143744 /* RobotRepresentation.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		744CB8EA42AB44EFA564BD7C /* ActiveCardanModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8A5A6491B414A2D92241718 /* ActiveCardanModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		78E3864808FC460C8379F2E3 /* PartList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4697F67BDFAF4B7FB414DB6F /* PartList.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7906E4B939B84C5785323C90 /* ConfigurationReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C90AF2DF0464435FAC0D8CC0 /* ConfigurationReader.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7A47DB6B875042D99B556E08 /* RotateJointRenderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9606F5261D634194AA874E61 /* RotateJointRenderModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7A92221C45DC40AEA84F2CD8 /* RobogenCollision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63EA5E0B1F214D67929BA921 /* RobogenCollision.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7B096CF68D15426EBDC76985 /* IndividualContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFD28E0053C41EBA1A46F0B /* IndividualContainer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7B71B209D99949E382CB0C20 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E4486501D4571874EBC87 /* Mesh.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		863260B810BD42F8927A912A /* Evolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B52DAA30E3D2431784D9D6B5 /* Evolver.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		880BB218AA734901B1255206 /* ActiveWheelModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3BB116AB42A4CD09976AB97 /* ActiveWheelModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8B9124F5C01A422F853864E2 /* BoxObstacleRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08FEE2DD98A4FACA114FDCC /* BoxObstacleRender.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8D777F5953484740B7BE978F /* Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27849D102A114593ADDB35F3 /* Connection.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8DFA09C8E363404BA8A81E1A /* RenderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4CC36594BC254297A80A1C0B /* RenderModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		920702FB70F143E2AA71C057 /* StartPosition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79B7A8A032D943F8A6E67491 /* StartPosition.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		926E124E2DE14626ACFFF707 /* TouchSensorRenderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD25D6373CF94B4AA9218CE4 /* TouchSensorRenderModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		960898E0FDBF490B9B627BF7 /* NeuralNetwork.c in Sources */ = {isa = PBXBuildFile; fileRef = FBB67A145FC6460689E4301A /* NeuralNetwork.c */; settings = {COMPILER_FLAGS = ""; }; };
+		978E536E832C4F549E084AB0 /* TerrainRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36DAE8C765014D6C841E6AA4 /* TerrainRender.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9B71909E4225462F8B5988D5 /* RacingScenario.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 305F737E868D4B909E3701D4 /* RacingScenario.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A30FC8A98B1A493D95943044 /* ParametricBrickRenderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44E802D05CD0429598D53F4F /* ParametricBrickRenderModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A3D9A5C4E71A40F48AAE8E1A /* LightSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E61A7558C0B54470A864B318 /* LightSource.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A700D8F95BE54D97BEBB6402 /* EvolverConfiguration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCC9A87C37A4418A8EB3724F /* EvolverConfiguration.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B05A019333C648EAA83F60E5 /* Robogen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6D6CC99F7B04495ADC85FBD /* Robogen.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B1167114CEEE4B23BDC43E47 /* RotateJointModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 668EFFCD1AA647AE9ED02A4D /* RotateJointModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CEF78E78F98047ECB00BF160 /* CardanRenderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADE782A62576443DAF8E30A6 /* CardanRenderModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D6ABED9714B04978B55B69E8 /* ServerViewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0D1B99E4E8048B49822BC79 /* ServerViewer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D91C8098B09F460CA44DBA5E /* CoreComponentRenderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2C3AE566DBF47D6A3C66C5D /* CoreComponentRenderModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E04F179DFBA743DF9775693F /* Terrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96845998690545389F4DE4D0 /* Terrain.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E2F5A1789C1C44F4BD935237 /* BodyVerifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBBA686B75E14D5199AC72B5 /* BodyVerifier.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E37A47A7B6204A69BCD5FDAD /* LightSensorModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB12B73EB8434AC0BCD80E5E /* LightSensorModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E3F0935FB8E743CB8A6005CA /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE22532D4973412DA9ADBCC2 /* Model.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EF42B186590F4897AEDB23B8 /* PartRepresentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB043E397A064A5FAD947FAA /* PartRepresentation.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F0ADFF8FB058481E9741455F /* FileViewerLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9A7A7AF5CFE491DB82A4364 /* FileViewerLog.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F31F6FBCC9964AF88A97058D /* ActiveCardanCrossCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7327BD30DCA4CB781201942 /* ActiveCardanCrossCallback.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F58EFAD6C312422D8738976D /* Population.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F098705F041A2B38FF8CE /* Population.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F951964A41414E00863DCDA2 /* BodyCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95DBC08756954FA2AE664E1A /* BodyCallback.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F9B72507B5CD42029921593B /* TcpSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39B2ED125E0C40D98D35D58D /* TcpSocket.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FC07A17CAC624C77934D10E9 /* PositionObservableCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0681E15A7AC4E8B9DC76616 /* PositionObservableCallback.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FCE2701E4A74482A933082F9 /* ActiveHingeRenderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94B1B2B264C74A91B9BDC4FA /* ActiveHingeRenderModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FF7E7004341B4DED8E982328 /* ActiveWhegModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC5D1111D90A44419044239A /* ActiveWhegModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FFF885E08AAD4083B2F38512 /* HingeModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF2EF1C6B6745A880DEDC3A /* HingeModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D6613AE6B824207BB88B090 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E244BDB5B4D4BBC97DD4E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 461896AC9EDF499F8B234AB2;
+			remoteInfo = robogen;
+		};
+		1FBE92347B204C44B714FE34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E244BDB5B4D4BBC97DD4E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 461896AC9EDF499F8B234AB2;
+			remoteInfo = robogen;
+		};
+		2209904A98AD494C9438A9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E244BDB5B4D4BBC97DD4E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACA4DA4C488435599C41BF9;
+			remoteInfo = ZERO_CHECK;
+		};
+		2BF4258DB2A74D8AA844B049 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E244BDB5B4D4BBC97DD4E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D652DB8A01B41069970DA3E;
+			remoteInfo = "robogen-server";
+		};
+		3FEA5FDBDCE5476FBA326811 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E244BDB5B4D4BBC97DD4E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42E20516392C41038206BEE7;
+			remoteInfo = "robogen-server-viewer";
+		};
+		64486054E1074D6A94C8B3B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E244BDB5B4D4BBC97DD4E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 461896AC9EDF499F8B234AB2;
+			remoteInfo = robogen;
+		};
+		6D73D49212064D6F82871DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E244BDB5B4D4BBC97DD4E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACA4DA4C488435599C41BF9;
+			remoteInfo = ZERO_CHECK;
+		};
+		74591985DAED47DB9DC8B532 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E244BDB5B4D4BBC97DD4E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D127B314D8654AD390BF0F44;
+			remoteInfo = "robogen-file-viewer";
+		};
+		80F2792D330F42678C79A6A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E244BDB5B4D4BBC97DD4E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 461896AC9EDF499F8B234AB2;
+			remoteInfo = robogen;
+		};
+		A479B23A71AC4511B1D2E29D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E244BDB5B4D4BBC97DD4E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACA4DA4C488435599C41BF9;
+			remoteInfo = ZERO_CHECK;
+		};
+		B903497266264E65B830AA09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E244BDB5B4D4BBC97DD4E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACA4DA4C488435599C41BF9;
+			remoteInfo = ZERO_CHECK;
+		};
+		BFCD411D6DB04757A753CDDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E244BDB5B4D4BBC97DD4E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 461896AC9EDF499F8B234AB2;
+			remoteInfo = robogen;
+		};
+		D3A52EE0B85D4E09B8C50006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E244BDB5B4D4BBC97DD4E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5358F518FFD43CEBC4942AA;
+			remoteInfo = "robogen-evolver";
+		};
+		F1B1109A684F45C0AB21B268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E244BDB5B4D4BBC97DD4E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACA4DA4C488435599C41BF9;
+			remoteInfo = ZERO_CHECK;
+		};
+		F52014FA391D4996903A7D2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E244BDB5B4D4BBC97DD4E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACA4DA4C488435599C41BF9;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06ABC8B242714DE59140D7D7 /* TouchSensorModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TouchSensorModel.cpp; path = model/components/perceptive/TouchSensorModel.cpp; sourceTree = SOURCE_ROOT; };
+		0E8F098705F041A2B38FF8CE /* Population.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Population.cpp; path = evolution/engine/Population.cpp; sourceTree = SOURCE_ROOT; };
+		165DF183D8D240F2846023AA /* BodyCompiler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BodyCompiler.cpp; path = printing/BodyCompiler.cpp; sourceTree = SOURCE_ROOT; };
+		206A72E5D18C4F74B26AB395 /* NeuronRepresentation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = NeuronRepresentation.cpp; path = evolution/representation/NeuronRepresentation.cpp; sourceTree = SOURCE_ROOT; };
+		22196B61EC414F38A434BADD /* DeterministicTournament.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DeterministicTournament.cpp; path = evolution/engine/Selectors/DeterministicTournament.cpp; sourceTree = SOURCE_ROOT; };
+		2385EE6D26984282A9E5CFAE /* ArduinoNNCompiler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ArduinoNNCompiler.cpp; path = arduino/ArduinoNNCompiler.cpp; sourceTree = SOURCE_ROOT; };
+		27849D102A114593ADDB35F3 /* Connection.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Connection.cpp; path = model/Connection.cpp; sourceTree = SOURCE_ROOT; };
+		2DAE71B344174DBD989FB5A4 /* LightSourceRender.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LightSourceRender.cpp; path = render/objects/LightSourceRender.cpp; sourceTree = SOURCE_ROOT; };
+		305F737E868D4B909E3701D4 /* RacingScenario.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RacingScenario.cpp; path = scenario/RacingScenario.cpp; sourceTree = SOURCE_ROOT; };
+		32D6DC4A7EE449A9AF312262 /* HingeRenderModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HingeRenderModel.cpp; path = render/components/HingeRenderModel.cpp; sourceTree = SOURCE_ROOT; };
+		36DAE8C765014D6C841E6AA4 /* TerrainRender.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TerrainRender.cpp; path = render/objects/TerrainRender.cpp; sourceTree = SOURCE_ROOT; };
+		39B2ED125E0C40D98D35D58D /* TcpSocket.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TcpSocket.cpp; path = utils/network/TcpSocket.cpp; sourceTree = SOURCE_ROOT; };
+		3D49C87D04FF4C8CADE6F4F5 /* CoreComponentModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CoreComponentModel.cpp; path = model/components/perceptive/CoreComponentModel.cpp; sourceTree = SOURCE_ROOT; };
+		44E802D05CD0429598D53F4F /* ParametricBrickRenderModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ParametricBrickRenderModel.cpp; path = render/components/ParametricBrickRenderModel.cpp; sourceTree = SOURCE_ROOT; };
+		4697F67BDFAF4B7FB414DB6F /* PartList.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = PartList.cpp; sourceTree = SOURCE_ROOT; };
+		4BA18A19113A4A59A4419053 /* robogen-file-viewer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "robogen-file-viewer"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC36594BC254297A80A1C0B /* RenderModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RenderModel.cpp; path = render/RenderModel.cpp; sourceTree = SOURCE_ROOT; };
+		589177FFA42142BC98CADB74 /* LightSensor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LightSensor.cpp; path = model/sensors/LightSensor.cpp; sourceTree = SOURCE_ROOT; };
+		5E5E4486501D4571874EBC87 /* Mesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Mesh.cpp; path = render/Mesh.cpp; sourceTree = SOURCE_ROOT; };
+		63E2DEF327054C679C4F4D28 /* LightSensorRenderModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LightSensorRenderModel.cpp; path = render/components/LightSensorRenderModel.cpp; sourceTree = SOURCE_ROOT; };
+		63EA5E0B1F214D67929BA921 /* RobogenCollision.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RobogenCollision.cpp; path = utils/RobogenCollision.cpp; sourceTree = SOURCE_ROOT; };
+		668EFFCD1AA647AE9ED02A4D /* RotateJointModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RotateJointModel.cpp; path = model/components/actuated/RotateJointModel.cpp; sourceTree = SOURCE_ROOT; };
+		688747C9BA70404E84C331D8 /* Robot.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = Robot.cpp; sourceTree = SOURCE_ROOT; };
+		6ABBB0BAF95247119B2213B7 /* robogen-evolver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "robogen-evolver"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B7A8A032D943F8A6E67491 /* StartPosition.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StartPosition.cpp; path = config/StartPosition.cpp; sourceTree = SOURCE_ROOT; };
+		7EE4E969C87C45CBA4D80D77 /* json2pb.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = json2pb.cpp; path = utils/json2pb/json2pb.cpp; sourceTree = SOURCE_ROOT; };
+		83B393F65084457AB0CA863E /* ClimbingScenario.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ClimbingScenario.cpp; path = scenario/ClimbingScenario.cpp; sourceTree = SOURCE_ROOT; };
+		84A90212190348B1921EED26 /* robogen-server-viewer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "robogen-server-viewer"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8539AD213FF741CDA4E72BF4 /* RobogenUtils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RobogenUtils.cpp; path = utils/RobogenUtils.cpp; sourceTree = SOURCE_ROOT; };
+		87BD232464414F37BE7D91C3 /* librobogen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = librobogen.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD9A7A663764525A2938773 /* BoxObstacle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BoxObstacle.cpp; path = model/objects/BoxObstacle.cpp; sourceTree = SOURCE_ROOT; };
+		8D0DA71C31BC47C5A3841206 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		90CD67E11D2449E38780DE72 /* ActiveWheelRenderModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ActiveWheelRenderModel.cpp; path = render/components/ActiveWheelRenderModel.cpp; sourceTree = SOURCE_ROOT; };
+		94B1B2B264C74A91B9BDC4FA /* ActiveHingeRenderModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ActiveHingeRenderModel.cpp; path = render/components/ActiveHingeRenderModel.cpp; sourceTree = SOURCE_ROOT; };
+		95DBC08756954FA2AE664E1A /* BodyCallback.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BodyCallback.cpp; path = render/callback/BodyCallback.cpp; sourceTree = SOURCE_ROOT; };
+		95F3198E5A174138B825AA2E /* robogen.pb.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = robogen.pb.cc; path = ../XCode/robogen.pb.cc; sourceTree = SOURCE_ROOT; };
+		9606F5261D634194AA874E61 /* RotateJointRenderModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RotateJointRenderModel.cpp; path = render/components/RotateJointRenderModel.cpp; sourceTree = SOURCE_ROOT; };
+		96845998690545389F4DE4D0 /* Terrain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Terrain.cpp; path = scenario/Terrain.cpp; sourceTree = SOURCE_ROOT; };
+		98CC8E794D8D4A0D83501066 /* RobogenServer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = RobogenServer.cpp; sourceTree = SOURCE_ROOT; };
+		9E9B3B713BA74B8DA15B7826 /* ActiveWhegRenderModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ActiveWhegRenderModel.cpp; path = render/components/ActiveWhegRenderModel.cpp; sourceTree = SOURCE_ROOT; };
+		A0681E15A7AC4E8B9DC76616 /* PositionObservableCallback.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PositionObservableCallback.cpp; path = render/callback/PositionObservableCallback.cpp; sourceTree = SOURCE_ROOT; };
+		AAE769B5823F49668CEFADAB /* Scenario.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Scenario.cpp; path = scenario/Scenario.cpp; sourceTree = SOURCE_ROOT; };
+		ADE782A62576443DAF8E30A6 /* CardanRenderModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CardanRenderModel.cpp; path = render/components/CardanRenderModel.cpp; sourceTree = SOURCE_ROOT; };
+		B2781E663ADC4AAF8B81C8ED /* ServoMotor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ServoMotor.cpp; path = model/motors/ServoMotor.cpp; sourceTree = SOURCE_ROOT; };
+		B3BB116AB42A4CD09976AB97 /* ActiveWheelModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ActiveWheelModel.cpp; path = model/components/actuated/ActiveWheelModel.cpp; sourceTree = SOURCE_ROOT; };
+		B3C6DBFAAB4941C39B9D0EB8 /* robogen-server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "robogen-server"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B422253615DD4985AA900EB8 /* PassiveWheelModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PassiveWheelModel.cpp; path = model/components/PassiveWheelModel.cpp; sourceTree = SOURCE_ROOT; };
+		B52DAA30E3D2431784D9D6B5 /* Evolver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = Evolver.cpp; sourceTree = SOURCE_ROOT; };
+		BB043E397A064A5FAD947FAA /* PartRepresentation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PartRepresentation.cpp; path = evolution/representation/PartRepresentation.cpp; sourceTree = SOURCE_ROOT; };
+		BBE4111119C94527827CBDB4 /* EvolverLog.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EvolverLog.cpp; path = evolution/engine/EvolverLog.cpp; sourceTree = SOURCE_ROOT; };
+		BC5D1111D90A44419044239A /* ActiveWhegModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ActiveWhegModel.cpp; path = model/components/actuated/ActiveWhegModel.cpp; sourceTree = SOURCE_ROOT; };
+		BCC9A87C37A4418A8EB3724F /* EvolverConfiguration.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EvolverConfiguration.cpp; path = config/EvolverConfiguration.cpp; sourceTree = SOURCE_ROOT; };
+		BDC3D864080E4C8F88143744 /* RobotRepresentation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RobotRepresentation.cpp; path = evolution/representation/RobotRepresentation.cpp; sourceTree = SOURCE_ROOT; };
+		BFEA8C5EA5FE4944AC00899C /* ParametricBrickModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ParametricBrickModel.cpp; path = model/components/ParametricBrickModel.cpp; sourceTree = SOURCE_ROOT; };
+		C0D1B99E4E8048B49822BC79 /* ServerViewer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ServerViewer.cpp; path = viewer/ServerViewer.cpp; sourceTree = SOURCE_ROOT; };
+		C1FDA9B5590C4687A1DB2BF2 /* ActiveHingeModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ActiveHingeModel.cpp; path = model/components/actuated/ActiveHingeModel.cpp; sourceTree = SOURCE_ROOT; };
+		C2CB044FAF81440FBF89D8DE /* FileViewer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FileViewer.cpp; path = viewer/FileViewer.cpp; sourceTree = SOURCE_ROOT; };
+		C6EE3D1E21CF4BCB8B9A7BF9 /* ImuSensor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImuSensor.cpp; path = model/sensors/ImuSensor.cpp; sourceTree = SOURCE_ROOT; };
+		C90AF2DF0464435FAC0D8CC0 /* ConfigurationReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ConfigurationReader.cpp; path = config/ConfigurationReader.cpp; sourceTree = SOURCE_ROOT; };
+		CB12B73EB8434AC0BCD80E5E /* LightSensorModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LightSensorModel.cpp; path = model/components/perceptive/LightSensorModel.cpp; sourceTree = SOURCE_ROOT; };
+		CBBA686B75E14D5199AC72B5 /* BodyVerifier.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BodyVerifier.cpp; path = evolution/engine/BodyVerifier.cpp; sourceTree = SOURCE_ROOT; };
+		CD25D6373CF94B4AA9218CE4 /* TouchSensorRenderModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TouchSensorRenderModel.cpp; path = render/components/TouchSensorRenderModel.cpp; sourceTree = SOURCE_ROOT; };
+		CE4F325039C64CBDACB09992 /* NeuralNetworkRepresentation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = NeuralNetworkRepresentation.cpp; path = evolution/representation/NeuralNetworkRepresentation.cpp; sourceTree = SOURCE_ROOT; };
+		D2C3AE566DBF47D6A3C66C5D /* CoreComponentRenderModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CoreComponentRenderModel.cpp; path = render/components/CoreComponentRenderModel.cpp; sourceTree = SOURCE_ROOT; };
+		D5200AA2ACB64CBF8579DB4F /* ScenarioFactory.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ScenarioFactory.cpp; path = scenario/ScenarioFactory.cpp; sourceTree = SOURCE_ROOT; };
+		DA423F3C0A474D709DCF0C6F /* Motor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Motor.cpp; path = model/motors/Motor.cpp; sourceTree = SOURCE_ROOT; };
+		DBAB206C26C94309B343DA32 /* PassiveWheelRenderModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PassiveWheelRenderModel.cpp; path = render/components/PassiveWheelRenderModel.cpp; sourceTree = SOURCE_ROOT; };
+		DD58636A05BE4E4B8AE700A3 /* CardanModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CardanModel.cpp; path = model/components/CardanModel.cpp; sourceTree = SOURCE_ROOT; };
+		DD82EB2E90B143D7A51D8C97 /* TouchSensor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TouchSensor.cpp; path = model/sensors/TouchSensor.cpp; sourceTree = SOURCE_ROOT; };
+		E0472E9A18F98028002434FE /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; sourceTree = "<group>"; };
+		E08FEE2DD98A4FACA114FDCC /* BoxObstacleRender.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BoxObstacleRender.cpp; path = render/objects/BoxObstacleRender.cpp; sourceTree = SOURCE_ROOT; };
+		E61A7558C0B54470A864B318 /* LightSource.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LightSource.cpp; path = model/objects/LightSource.cpp; sourceTree = SOURCE_ROOT; };
+		E6F80434D5904519AD1882C9 /* MyManipulator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MyManipulator.cpp; path = viewer/MyManipulator.cpp; sourceTree = SOURCE_ROOT; };
+		E7327BD30DCA4CB781201942 /* ActiveCardanCrossCallback.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ActiveCardanCrossCallback.cpp; path = render/callback/ActiveCardanCrossCallback.cpp; sourceTree = SOURCE_ROOT; };
+		E9A7A7AF5CFE491DB82A4364 /* FileViewerLog.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FileViewerLog.cpp; path = viewer/FileViewerLog.cpp; sourceTree = SOURCE_ROOT; };
+		ED33BDAC9DD74A1AAE06C1A2 /* ChasingScenario.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ChasingScenario.cpp; path = scenario/ChasingScenario.cpp; sourceTree = SOURCE_ROOT; };
+		EDFD28E0053C41EBA1A46F0B /* IndividualContainer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IndividualContainer.cpp; path = evolution/engine/IndividualContainer.cpp; sourceTree = SOURCE_ROOT; };
+		F16E18B35C1A42D382D0649C /* Mutator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Mutator.cpp; path = evolution/engine/Mutator.cpp; sourceTree = SOURCE_ROOT; };
+		F29D26F6C8E448A7A6C1A737 /* CardanCrossCallback.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CardanCrossCallback.cpp; path = render/callback/CardanCrossCallback.cpp; sourceTree = SOURCE_ROOT; };
+		F3A988F4320A4F87A2536B0B /* robogen.pb.cc.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = robogen.pb.cc.rule; path = ../XCode/robogen.pb.cc.rule; sourceTree = SOURCE_ROOT; };
+		F6D6CC99F7B04495ADC85FBD /* Robogen.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = Robogen.cpp; sourceTree = SOURCE_ROOT; };
+		F8A5A6491B414A2D92241718 /* ActiveCardanModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ActiveCardanModel.cpp; path = model/components/actuated/ActiveCardanModel.cpp; sourceTree = SOURCE_ROOT; };
+		FAF2EF1C6B6745A880DEDC3A /* HingeModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HingeModel.cpp; path = model/components/HingeModel.cpp; sourceTree = SOURCE_ROOT; };
+		FB8B9FAFA88B473FA4172B42 /* ActiveCardanRenderModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ActiveCardanRenderModel.cpp; path = render/components/ActiveCardanRenderModel.cpp; sourceTree = SOURCE_ROOT; };
+		FBB67A145FC6460689E4301A /* NeuralNetwork.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = NeuralNetwork.c; path = brain/NeuralNetwork.c; sourceTree = SOURCE_ROOT; };
+		FE22532D4973412DA9ADBCC2 /* Model.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Model.cpp; path = model/Model.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0ECD191C1A9743F4A2A172A4 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2CB044FAF81440FBF89D8DE /* FileViewer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		0FF53FC42AD5496CBD84B4B7 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				98CC8E794D8D4A0D83501066 /* RobogenServer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		12DD8D8A85974AF28EA6E86E /* robogen-file-viewer */ = {
+			isa = PBXGroup;
+			children = (
+				0ECD191C1A9743F4A2A172A4 /* Source Files */,
+				8D0DA71C31BC47C5A3841206 /* CMakeLists.txt */,
+			);
+			name = "robogen-file-viewer";
+			sourceTree = "<group>";
+		};
+		1CE8B45FF2F74095BF283C36 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2C825D05F95B4C408113634E /* robogen-server-viewer */ = {
+			isa = PBXGroup;
+			children = (
+				F5F676601359475183A10682 /* Source Files */,
+				8D0DA71C31BC47C5A3841206 /* CMakeLists.txt */,
+			);
+			name = "robogen-server-viewer";
+			sourceTree = "<group>";
+		};
+		371D16C5A46C4F55AFEF74CA /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		630D6386C2ED4CE2A75D301D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				F3A988F4320A4F87A2536B0B /* robogen.pb.cc.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		727A29D6D6A84268927393C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87BD232464414F37BE7D91C3 /* librobogen.a */,
+				6ABBB0BAF95247119B2213B7 /* robogen-evolver */,
+				4BA18A19113A4A59A4419053 /* robogen-file-viewer */,
+				B3C6DBFAAB4941C39B9D0EB8 /* robogen-server */,
+				84A90212190348B1921EED26 /* robogen-server-viewer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A1D66FE9ED2403DBB12F706 /* robogen-evolver */ = {
+			isa = PBXGroup;
+			children = (
+				8CEDAA6346F5489E8DA386B5 /* Source Files */,
+				8D0DA71C31BC47C5A3841206 /* CMakeLists.txt */,
+			);
+			name = "robogen-evolver";
+			sourceTree = "<group>";
+		};
+		7C0A831EEEFC444E91B94EAD /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				E493FCF8AD17474B9A46344D /* CMake Rules */,
+				8D0DA71C31BC47C5A3841206 /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		8098C6C24B404529ACA93B91 = {
+			isa = PBXGroup;
+			children = (
+				E0472E9A18F98028002434FE /* src */,
+				F6B2797FD4194E31B242FD45 /* Sources */,
+				1CE8B45FF2F74095BF283C36 /* Resources */,
+				727A29D6D6A84268927393C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CEDAA6346F5489E8DA386B5 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B52DAA30E3D2431784D9D6B5 /* Evolver.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A1BAEE9236BC4727A6E9FA3F /* robogen */ = {
+			isa = PBXGroup;
+			children = (
+				BE4C91AA89D8428B8C65D281 /* Source Files */,
+				630D6386C2ED4CE2A75D301D /* CMake Rules */,
+				8D0DA71C31BC47C5A3841206 /* CMakeLists.txt */,
+			);
+			name = robogen;
+			sourceTree = "<group>";
+		};
+		A67F6700A6A94154A8E7DCDB /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				371D16C5A46C4F55AFEF74CA /* CMake Rules */,
+				8D0DA71C31BC47C5A3841206 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		BE4C91AA89D8428B8C65D281 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				95F3198E5A174138B825AA2E /* robogen.pb.cc */,
+				4697F67BDFAF4B7FB414DB6F /* PartList.cpp */,
+				F6D6CC99F7B04495ADC85FBD /* Robogen.cpp */,
+				688747C9BA70404E84C331D8 /* Robot.cpp */,
+				2385EE6D26984282A9E5CFAE /* ArduinoNNCompiler.cpp */,
+				FBB67A145FC6460689E4301A /* NeuralNetwork.c */,
+				C90AF2DF0464435FAC0D8CC0 /* ConfigurationReader.cpp */,
+				BCC9A87C37A4418A8EB3724F /* EvolverConfiguration.cpp */,
+				79B7A8A032D943F8A6E67491 /* StartPosition.cpp */,
+				CBBA686B75E14D5199AC72B5 /* BodyVerifier.cpp */,
+				BBE4111119C94527827CBDB4 /* EvolverLog.cpp */,
+				EDFD28E0053C41EBA1A46F0B /* IndividualContainer.cpp */,
+				F16E18B35C1A42D382D0649C /* Mutator.cpp */,
+				0E8F098705F041A2B38FF8CE /* Population.cpp */,
+				22196B61EC414F38A434BADD /* DeterministicTournament.cpp */,
+				CE4F325039C64CBDACB09992 /* NeuralNetworkRepresentation.cpp */,
+				206A72E5D18C4F74B26AB395 /* NeuronRepresentation.cpp */,
+				BB043E397A064A5FAD947FAA /* PartRepresentation.cpp */,
+				BDC3D864080E4C8F88143744 /* RobotRepresentation.cpp */,
+				27849D102A114593ADDB35F3 /* Connection.cpp */,
+				FE22532D4973412DA9ADBCC2 /* Model.cpp */,
+				DD58636A05BE4E4B8AE700A3 /* CardanModel.cpp */,
+				FAF2EF1C6B6745A880DEDC3A /* HingeModel.cpp */,
+				BFEA8C5EA5FE4944AC00899C /* ParametricBrickModel.cpp */,
+				B422253615DD4985AA900EB8 /* PassiveWheelModel.cpp */,
+				F8A5A6491B414A2D92241718 /* ActiveCardanModel.cpp */,
+				C1FDA9B5590C4687A1DB2BF2 /* ActiveHingeModel.cpp */,
+				B3BB116AB42A4CD09976AB97 /* ActiveWheelModel.cpp */,
+				BC5D1111D90A44419044239A /* ActiveWhegModel.cpp */,
+				668EFFCD1AA647AE9ED02A4D /* RotateJointModel.cpp */,
+				3D49C87D04FF4C8CADE6F4F5 /* CoreComponentModel.cpp */,
+				CB12B73EB8434AC0BCD80E5E /* LightSensorModel.cpp */,
+				06ABC8B242714DE59140D7D7 /* TouchSensorModel.cpp */,
+				DA423F3C0A474D709DCF0C6F /* Motor.cpp */,
+				B2781E663ADC4AAF8B81C8ED /* ServoMotor.cpp */,
+				8BD9A7A663764525A2938773 /* BoxObstacle.cpp */,
+				E61A7558C0B54470A864B318 /* LightSource.cpp */,
+				C6EE3D1E21CF4BCB8B9A7BF9 /* ImuSensor.cpp */,
+				589177FFA42142BC98CADB74 /* LightSensor.cpp */,
+				DD82EB2E90B143D7A51D8C97 /* TouchSensor.cpp */,
+				165DF183D8D240F2846023AA /* BodyCompiler.cpp */,
+				5E5E4486501D4571874EBC87 /* Mesh.cpp */,
+				4CC36594BC254297A80A1C0B /* RenderModel.cpp */,
+				E7327BD30DCA4CB781201942 /* ActiveCardanCrossCallback.cpp */,
+				95DBC08756954FA2AE664E1A /* BodyCallback.cpp */,
+				F29D26F6C8E448A7A6C1A737 /* CardanCrossCallback.cpp */,
+				A0681E15A7AC4E8B9DC76616 /* PositionObservableCallback.cpp */,
+				FB8B9FAFA88B473FA4172B42 /* ActiveCardanRenderModel.cpp */,
+				94B1B2B264C74A91B9BDC4FA /* ActiveHingeRenderModel.cpp */,
+				90CD67E11D2449E38780DE72 /* ActiveWheelRenderModel.cpp */,
+				9E9B3B713BA74B8DA15B7826 /* ActiveWhegRenderModel.cpp */,
+				ADE782A62576443DAF8E30A6 /* CardanRenderModel.cpp */,
+				D2C3AE566DBF47D6A3C66C5D /* CoreComponentRenderModel.cpp */,
+				32D6DC4A7EE449A9AF312262 /* HingeRenderModel.cpp */,
+				63E2DEF327054C679C4F4D28 /* LightSensorRenderModel.cpp */,
+				44E802D05CD0429598D53F4F /* ParametricBrickRenderModel.cpp */,
+				DBAB206C26C94309B343DA32 /* PassiveWheelRenderModel.cpp */,
+				9606F5261D634194AA874E61 /* RotateJointRenderModel.cpp */,
+				CD25D6373CF94B4AA9218CE4 /* TouchSensorRenderModel.cpp */,
+				E08FEE2DD98A4FACA114FDCC /* BoxObstacleRender.cpp */,
+				2DAE71B344174DBD989FB5A4 /* LightSourceRender.cpp */,
+				36DAE8C765014D6C841E6AA4 /* TerrainRender.cpp */,
+				ED33BDAC9DD74A1AAE06C1A2 /* ChasingScenario.cpp */,
+				83B393F65084457AB0CA863E /* ClimbingScenario.cpp */,
+				305F737E868D4B909E3701D4 /* RacingScenario.cpp */,
+				AAE769B5823F49668CEFADAB /* Scenario.cpp */,
+				D5200AA2ACB64CBF8579DB4F /* ScenarioFactory.cpp */,
+				96845998690545389F4DE4D0 /* Terrain.cpp */,
+				63EA5E0B1F214D67929BA921 /* RobogenCollision.cpp */,
+				8539AD213FF741CDA4E72BF4 /* RobogenUtils.cpp */,
+				7EE4E969C87C45CBA4D80D77 /* json2pb.cpp */,
+				39B2ED125E0C40D98D35D58D /* TcpSocket.cpp */,
+				C2CB044FAF81440FBF89D8DE /* FileViewer.cpp */,
+				E9A7A7AF5CFE491DB82A4364 /* FileViewerLog.cpp */,
+				E6F80434D5904519AD1882C9 /* MyManipulator.cpp */,
+				C0D1B99E4E8048B49822BC79 /* ServerViewer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		DA1652A2EF0B4B7E8B70C311 /* robogen-server */ = {
+			isa = PBXGroup;
+			children = (
+				0FF53FC42AD5496CBD84B4B7 /* Source Files */,
+				8D0DA71C31BC47C5A3841206 /* CMakeLists.txt */,
+			);
+			name = "robogen-server";
+			sourceTree = "<group>";
+		};
+		E493FCF8AD17474B9A46344D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F5F676601359475183A10682 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0D1B99E4E8048B49822BC79 /* ServerViewer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F6B2797FD4194E31B242FD45 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A67F6700A6A94154A8E7DCDB /* ALL_BUILD */,
+				7C0A831EEEFC444E91B94EAD /* ZERO_CHECK */,
+				A1BAEE9236BC4727A6E9FA3F /* robogen */,
+				7A1D66FE9ED2403DBB12F706 /* robogen-evolver */,
+				12DD8D8A85974AF28EA6E86E /* robogen-file-viewer */,
+				DA1652A2EF0B4B7E8B70C311 /* robogen-server */,
+				2C825D05F95B4C408113634E /* robogen-server-viewer */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42E20516392C41038206BEE7 /* robogen-server-viewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D2E625824384ADD909FDCD5 /* Build configuration list for PBXNativeTarget "robogen-server-viewer" */;
+			buildPhases = (
+				0569C2D2E25842DF99A6BFFF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69B5087AC994432F9A5BA403 /* PBXTargetDependency */,
+				B6B240D341E94969A786520A /* PBXTargetDependency */,
+			);
+			name = "robogen-server-viewer";
+			productName = "robogen-server-viewer";
+			productReference = 84A90212190348B1921EED26 /* robogen-server-viewer */;
+			productType = "com.apple.product-type.tool";
+		};
+		461896AC9EDF499F8B234AB2 /* robogen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 528D697A98394F8F8A51B2DB /* Build configuration list for PBXNativeTarget "robogen" */;
+			buildPhases = (
+				6B54EFAD5F5A48E5BC6FE0AF /* CMake Rules */,
+				4C029CA7B2644B4DB43277E2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4C0DBD3D2DF4ADB87C0C16A /* PBXTargetDependency */,
+			);
+			name = robogen;
+			productName = robogen;
+			productReference = 87BD232464414F37BE7D91C3 /* librobogen.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4D652DB8A01B41069970DA3E /* robogen-server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98BEDA25D4A34050A95FD7C5 /* Build configuration list for PBXNativeTarget "robogen-server" */;
+			buildPhases = (
+				24A13CF34618429F88941894 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EF685DDA6744612B390231E /* PBXTargetDependency */,
+				6C52D884972C43C5881E0731 /* PBXTargetDependency */,
+			);
+			name = "robogen-server";
+			productName = "robogen-server";
+			productReference = B3C6DBFAAB4941C39B9D0EB8 /* robogen-server */;
+			productType = "com.apple.product-type.tool";
+		};
+		B5358F518FFD43CEBC4942AA /* robogen-evolver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5BAA94496A74C1DA6DA0EAF /* Build configuration list for PBXNativeTarget "robogen-evolver" */;
+			buildPhases = (
+				BA84514BCAB6430DB80261FB /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFD3C4545C174163B3FAAA18 /* PBXTargetDependency */,
+				65D7B9BAA86F4DC0A0079700 /* PBXTargetDependency */,
+			);
+			name = "robogen-evolver";
+			productName = "robogen-evolver";
+			productReference = 6ABBB0BAF95247119B2213B7 /* robogen-evolver */;
+			productType = "com.apple.product-type.tool";
+		};
+		D127B314D8654AD390BF0F44 /* robogen-file-viewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C64C76BFCF349D2BEFA564A /* Build configuration list for PBXNativeTarget "robogen-file-viewer" */;
+			buildPhases = (
+				18B0E73B4636450E8E402499 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2CDF0560F0C465CB65E6AA7 /* PBXTargetDependency */,
+				A1E9A005470942BC9CC7BCE0 /* PBXTargetDependency */,
+			);
+			name = "robogen-file-viewer";
+			productName = "robogen-file-viewer";
+			productReference = 4BA18A19113A4A59A4419053 /* robogen-file-viewer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E244BDB5B4D4BBC97DD4E1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = EA25EC3AB90D4E89853B05F0 /* Build configuration list for PBXProject "RoboGen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8098C6C24B404529ACA93B91;
+			projectDirPath = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src";
+			projectRoot = "";
+			targets = (
+				AB2F9EDA1740476E8F293A12 /* ALL_BUILD */,
+				9ACA4DA4C488435599C41BF9 /* ZERO_CHECK */,
+				461896AC9EDF499F8B234AB2 /* robogen */,
+				B5358F518FFD43CEBC4942AA /* robogen-evolver */,
+				D127B314D8654AD390BF0F44 /* robogen-file-viewer */,
+				4D652DB8A01B41069970DA3E /* robogen-server */,
+				42E20516392C41038206BEE7 /* robogen-server-viewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B54EFAD5F5A48E5BC6FE0AF /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/quentinpeter/Documents/Ecole/EFFL\\ MA2/BIAI/Projet_BIAI/robogen/XCode -f /Users/quentinpeter/Documents/Ecole/EFFL\\ MA2/BIAI/Projet_BIAI/robogen/XCode/CMakeScripts/robogen_cmakeRulesBuildPhase.make$CONFIGURATION cmake_check_multiple_outputs all";
+			showEnvVarsInLog = 0;
+		};
+		8184D81189714E78847F9F3E /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/quentinpeter/Documents/Ecole/EFFL\\ MA2/BIAI/Projet_BIAI/robogen/XCode -f /Users/quentinpeter/Documents/Ecole/EFFL\\ MA2/BIAI/Projet_BIAI/robogen/XCode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		AEE993F917CA4BF4AAD61E56 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/quentinpeter/Documents/Ecole/EFFL\\ MA2/BIAI/Projet_BIAI/robogen/XCode -f /Users/quentinpeter/Documents/Ecole/EFFL\\ MA2/BIAI/Projet_BIAI/robogen/XCode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0569C2D2E25842DF99A6BFFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6ABED9714B04978B55B69E8 /* ServerViewer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B0E73B4636450E8E402499 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDC27DB17C645EBA4F4057B /* FileViewer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24A13CF34618429F88941894 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1193A4AAF5774C5AA4AFEA9A /* RobogenServer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C029CA7B2644B4DB43277E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D2CFAB033D34B92BE30C945 /* robogen.pb.cc in Sources */,
+				78E3864808FC460C8379F2E3 /* PartList.cpp in Sources */,
+				B05A019333C648EAA83F60E5 /* Robogen.cpp in Sources */,
+				0D4C3A81211742F18B8F9310 /* Robot.cpp in Sources */,
+				2E9CBF20B0AA4E2A95B85553 /* ArduinoNNCompiler.cpp in Sources */,
+				960898E0FDBF490B9B627BF7 /* NeuralNetwork.c in Sources */,
+				7906E4B939B84C5785323C90 /* ConfigurationReader.cpp in Sources */,
+				A700D8F95BE54D97BEBB6402 /* EvolverConfiguration.cpp in Sources */,
+				920702FB70F143E2AA71C057 /* StartPosition.cpp in Sources */,
+				E2F5A1789C1C44F4BD935237 /* BodyVerifier.cpp in Sources */,
+				0E9102E356EA4AF9BEE317AB /* EvolverLog.cpp in Sources */,
+				7B096CF68D15426EBDC76985 /* IndividualContainer.cpp in Sources */,
+				24F1897986E8431E98441D1B /* Mutator.cpp in Sources */,
+				F58EFAD6C312422D8738976D /* Population.cpp in Sources */,
+				3EBC605A931B40A587B5F189 /* DeterministicTournament.cpp in Sources */,
+				5B2C68103735412C8052210F /* NeuralNetworkRepresentation.cpp in Sources */,
+				0D4A8B32A6C440B098EBAD25 /* NeuronRepresentation.cpp in Sources */,
+				EF42B186590F4897AEDB23B8 /* PartRepresentation.cpp in Sources */,
+				71EC1A9D3EF4430E83251E52 /* RobotRepresentation.cpp in Sources */,
+				8D777F5953484740B7BE978F /* Connection.cpp in Sources */,
+				E3F0935FB8E743CB8A6005CA /* Model.cpp in Sources */,
+				574E2378D3CB42618A958A32 /* CardanModel.cpp in Sources */,
+				FFF885E08AAD4083B2F38512 /* HingeModel.cpp in Sources */,
+				4EFA04FADF8848B7B7C0FC4F /* ParametricBrickModel.cpp in Sources */,
+				5A1D22EFF1784DD4B7731EEC /* PassiveWheelModel.cpp in Sources */,
+				744CB8EA42AB44EFA564BD7C /* ActiveCardanModel.cpp in Sources */,
+				329A2642793D4195823BDDA8 /* ActiveHingeModel.cpp in Sources */,
+				880BB218AA734901B1255206 /* ActiveWheelModel.cpp in Sources */,
+				FF7E7004341B4DED8E982328 /* ActiveWhegModel.cpp in Sources */,
+				B1167114CEEE4B23BDC43E47 /* RotateJointModel.cpp in Sources */,
+				3DB02AE6051B476496BE306F /* CoreComponentModel.cpp in Sources */,
+				E37A47A7B6204A69BCD5FDAD /* LightSensorModel.cpp in Sources */,
+				330871B0CD09446CBBC10F19 /* TouchSensorModel.cpp in Sources */,
+				5608E02BC9014663B97FB6BA /* Motor.cpp in Sources */,
+				301A23A5B5424DC898298273 /* ServoMotor.cpp in Sources */,
+				6A631280CC2046B797FF5CB8 /* BoxObstacle.cpp in Sources */,
+				A3D9A5C4E71A40F48AAE8E1A /* LightSource.cpp in Sources */,
+				1AD822C5430348C09EAA1DC3 /* ImuSensor.cpp in Sources */,
+				1F3EE1FBC4E2443294859DAE /* LightSensor.cpp in Sources */,
+				065D8C5EC5DF4D15989AD39A /* TouchSensor.cpp in Sources */,
+				5657766CE1D84084BD366FE0 /* BodyCompiler.cpp in Sources */,
+				7B71B209D99949E382CB0C20 /* Mesh.cpp in Sources */,
+				8DFA09C8E363404BA8A81E1A /* RenderModel.cpp in Sources */,
+				F31F6FBCC9964AF88A97058D /* ActiveCardanCrossCallback.cpp in Sources */,
+				F951964A41414E00863DCDA2 /* BodyCallback.cpp in Sources */,
+				51554A75183D4069BC508C6D /* CardanCrossCallback.cpp in Sources */,
+				FC07A17CAC624C77934D10E9 /* PositionObservableCallback.cpp in Sources */,
+				0B27D8E9B2AB4666A743FC80 /* ActiveCardanRenderModel.cpp in Sources */,
+				FCE2701E4A74482A933082F9 /* ActiveHingeRenderModel.cpp in Sources */,
+				48EEC199AAB94E54846F09CD /* ActiveWheelRenderModel.cpp in Sources */,
+				12C65C5FDFCB4629A300A885 /* ActiveWhegRenderModel.cpp in Sources */,
+				CEF78E78F98047ECB00BF160 /* CardanRenderModel.cpp in Sources */,
+				D91C8098B09F460CA44DBA5E /* CoreComponentRenderModel.cpp in Sources */,
+				28AE0E4802154A65BDDFE3AC /* HingeRenderModel.cpp in Sources */,
+				0BE4CDF891E742FC82C24A29 /* LightSensorRenderModel.cpp in Sources */,
+				A30FC8A98B1A493D95943044 /* ParametricBrickRenderModel.cpp in Sources */,
+				2E694224FD344B438AEFE8CD /* PassiveWheelRenderModel.cpp in Sources */,
+				7A47DB6B875042D99B556E08 /* RotateJointRenderModel.cpp in Sources */,
+				926E124E2DE14626ACFFF707 /* TouchSensorRenderModel.cpp in Sources */,
+				8B9124F5C01A422F853864E2 /* BoxObstacleRender.cpp in Sources */,
+				6C8C32859109495490C01DF7 /* LightSourceRender.cpp in Sources */,
+				978E536E832C4F549E084AB0 /* TerrainRender.cpp in Sources */,
+				6BE85F64ECC24BBA98FF53DD /* ChasingScenario.cpp in Sources */,
+				547D1D5235FF4872AA2723C7 /* ClimbingScenario.cpp in Sources */,
+				9B71909E4225462F8B5988D5 /* RacingScenario.cpp in Sources */,
+				4610FC90D5774D18992C6252 /* Scenario.cpp in Sources */,
+				3B73F0FE52864789B4DFFE12 /* ScenarioFactory.cpp in Sources */,
+				E04F179DFBA743DF9775693F /* Terrain.cpp in Sources */,
+				7A92221C45DC40AEA84F2CD8 /* RobogenCollision.cpp in Sources */,
+				110F233AD91C4FC7BED0DEAD /* RobogenUtils.cpp in Sources */,
+				5CA9D12EBEC34021933CE82A /* json2pb.cpp in Sources */,
+				F9B72507B5CD42029921593B /* TcpSocket.cpp in Sources */,
+				2BDA66CEDFDA4A1184DFAB7C /* FileViewer.cpp in Sources */,
+				F0ADFF8FB058481E9741455F /* FileViewerLog.cpp in Sources */,
+				5F28CAEB59B347B0BD15C2C3 /* MyManipulator.cpp in Sources */,
+				5E622C2FE65C446C85C088A8 /* ServerViewer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA84514BCAB6430DB80261FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863260B810BD42F8927A912A /* Evolver.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EF685DDA6744612B390231E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACA4DA4C488435599C41BF9 /* ZERO_CHECK */;
+			targetProxy = F52014FA391D4996903A7D2C /* PBXContainerItemProxy */;
+		};
+		4A2A5DF7D34F478F90A03056 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5358F518FFD43CEBC4942AA /* robogen-evolver */;
+			targetProxy = D3A52EE0B85D4E09B8C50006 /* PBXContainerItemProxy */;
+		};
+		65D7B9BAA86F4DC0A0079700 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 461896AC9EDF499F8B234AB2 /* robogen */;
+			targetProxy = BFCD411D6DB04757A753CDDE /* PBXContainerItemProxy */;
+		};
+		6951A37242794F36ABECD536 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D652DB8A01B41069970DA3E /* robogen-server */;
+			targetProxy = 2BF4258DB2A74D8AA844B049 /* PBXContainerItemProxy */;
+		};
+		69B5087AC994432F9A5BA403 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACA4DA4C488435599C41BF9 /* ZERO_CHECK */;
+			targetProxy = F1B1109A684F45C0AB21B268 /* PBXContainerItemProxy */;
+		};
+		6A1C0DA9DDBF466384566B45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 461896AC9EDF499F8B234AB2 /* robogen */;
+			targetProxy = 64486054E1074D6A94C8B3B5 /* PBXContainerItemProxy */;
+		};
+		6C52D884972C43C5881E0731 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 461896AC9EDF499F8B234AB2 /* robogen */;
+			targetProxy = 1FBE92347B204C44B714FE34 /* PBXContainerItemProxy */;
+		};
+		977F81C4CA50464D942D1CEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACA4DA4C488435599C41BF9 /* ZERO_CHECK */;
+			targetProxy = A479B23A71AC4511B1D2E29D /* PBXContainerItemProxy */;
+		};
+		9E79070B8C9F474F9336DB3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D127B314D8654AD390BF0F44 /* robogen-file-viewer */;
+			targetProxy = 74591985DAED47DB9DC8B532 /* PBXContainerItemProxy */;
+		};
+		A1E9A005470942BC9CC7BCE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 461896AC9EDF499F8B234AB2 /* robogen */;
+			targetProxy = 1D6613AE6B824207BB88B090 /* PBXContainerItemProxy */;
+		};
+		B6B240D341E94969A786520A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 461896AC9EDF499F8B234AB2 /* robogen */;
+			targetProxy = 80F2792D330F42678C79A6A5 /* PBXContainerItemProxy */;
+		};
+		C4C0DBD3D2DF4ADB87C0C16A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACA4DA4C488435599C41BF9 /* ZERO_CHECK */;
+			targetProxy = 6D73D49212064D6F82871DC7 /* PBXContainerItemProxy */;
+		};
+		C9D5D4DE47AF4D16943F4D00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42E20516392C41038206BEE7 /* robogen-server-viewer */;
+			targetProxy = 3FEA5FDBDCE5476FBA326811 /* PBXContainerItemProxy */;
+		};
+		DFD3C4545C174163B3FAAA18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACA4DA4C488435599C41BF9 /* ZERO_CHECK */;
+			targetProxy = 2209904A98AD494C9438A9D8 /* PBXContainerItemProxy */;
+		};
+		E2CDF0560F0C465CB65E6AA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACA4DA4C488435599C41BF9 /* ZERO_CHECK */;
+			targetProxy = B903497266264E65B830AA09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D943442404A4C8BA7E8039E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-funroll-loops",
+					"-finline-functions",
+					"-fomit-frame-pointer",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/Release/librobogen.a\"",
+					/usr/local/lib/libode.a,
+					/usr/local/lib/libosg.dylib,
+					/usr/local/lib/libosgViewer.dylib,
+					/usr/local/lib/libosgDB.dylib,
+					/usr/local/lib/libosgGA.dylib,
+					/usr/local/lib/libosgTerrain.dylib,
+					/usr/local/lib/libOpenThreads.dylib,
+					/usr/lib/libz.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libjansson.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/local/lib/libjansson.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "robogen-server-viewer";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		29F4D7A38B7947CB88A5BE4D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/MinSizeRel/librobogen.a\"",
+					/usr/local/lib/libode.a,
+					/usr/local/lib/libosg.dylib,
+					/usr/local/lib/libosgViewer.dylib,
+					/usr/local/lib/libosgDB.dylib,
+					/usr/local/lib/libosgGA.dylib,
+					/usr/local/lib/libosgTerrain.dylib,
+					/usr/local/lib/libOpenThreads.dylib,
+					/usr/lib/libz.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libjansson.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/local/lib/libjansson.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "robogen-server";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		2E67ED629B7A418E881A197F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-funroll-loops",
+					"-finline-functions",
+					"-fomit-frame-pointer",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/Release/librobogen.a\"",
+					/usr/local/lib/libode.a,
+					/usr/local/lib/libosg.dylib,
+					/usr/local/lib/libosgViewer.dylib,
+					/usr/local/lib/libosgDB.dylib,
+					/usr/local/lib/libosgGA.dylib,
+					/usr/local/lib/libosgTerrain.dylib,
+					/usr/local/lib/libOpenThreads.dylib,
+					/usr/lib/libz.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libjansson.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/local/lib/libjansson.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "robogen-server";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		32484517AE6441B58BF99F59 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/MinSizeRel/librobogen.a\"",
+					/usr/local/lib/libode.a,
+					/usr/local/lib/libosg.dylib,
+					/usr/local/lib/libosgViewer.dylib,
+					/usr/local/lib/libosgDB.dylib,
+					/usr/local/lib/libosgGA.dylib,
+					/usr/local/lib/libosgTerrain.dylib,
+					/usr/local/lib/libOpenThreads.dylib,
+					/usr/lib/libz.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libjansson.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/local/lib/libjansson.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "robogen-file-viewer";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		33CB123C77884386A7D7C5D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		4177B403F9564AE3B7037091 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/build";
+			};
+			name = MinSizeRel;
+		};
+		42937320BE9C4D8981FE6C58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-g",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DDEBUG",
+					"-ggdb3",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/Debug/librobogen.a\"",
+					/usr/local/lib/libode.a,
+					/usr/local/lib/libosg.dylib,
+					/usr/local/lib/libosgViewer.dylib,
+					/usr/local/lib/libosgDB.dylib,
+					/usr/local/lib/libosgGA.dylib,
+					/usr/local/lib/libosgTerrain.dylib,
+					/usr/local/lib/libOpenThreads.dylib,
+					/usr/lib/libz.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.dylib,
+					/usr/local/lib/libpng.a,
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libjansson.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.dylib,
+					/usr/local/lib/libpng.a,
+					/usr/local/lib/libjansson.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "robogen-file-viewer";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		45AC5B6AB3C246899B9670A9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/build";
+			};
+			name = RelWithDebInfo;
+		};
+		4A083650253A4618ADF74121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-funroll-loops",
+					"-finline-functions",
+					"-fomit-frame-pointer",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = robogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		5DA8FF5D0E5C4FF29B3DD0CB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = robogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		5DBC92492D9546BBA2958D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-funroll-loops",
+					"-finline-functions",
+					"-fomit-frame-pointer",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/Release/librobogen.a\"",
+					/usr/local/lib/libode.a,
+					/usr/local/lib/libosg.dylib,
+					/usr/local/lib/libosgViewer.dylib,
+					/usr/local/lib/libosgDB.dylib,
+					/usr/local/lib/libosgGA.dylib,
+					/usr/local/lib/libosgTerrain.dylib,
+					/usr/local/lib/libOpenThreads.dylib,
+					/usr/lib/libz.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libjansson.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/local/lib/libjansson.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "robogen-file-viewer";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		6657ED2CC2784D34A8FC2C20 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/RelWithDebInfo/librobogen.a\"",
+					/usr/local/lib/libode.a,
+					/usr/local/lib/libosg.dylib,
+					/usr/local/lib/libosgViewer.dylib,
+					/usr/local/lib/libosgDB.dylib,
+					/usr/local/lib/libosgGA.dylib,
+					/usr/local/lib/libosgTerrain.dylib,
+					/usr/local/lib/libOpenThreads.dylib,
+					/usr/lib/libz.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libjansson.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/local/lib/libjansson.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "robogen-evolver";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		68C8B5A6443345C7AA58BA9B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/MinSizeRel/librobogen.a\"",
+					/usr/local/lib/libode.a,
+					/usr/local/lib/libosg.dylib,
+					/usr/local/lib/libosgViewer.dylib,
+					/usr/local/lib/libosgDB.dylib,
+					/usr/local/lib/libosgGA.dylib,
+					/usr/local/lib/libosgTerrain.dylib,
+					/usr/local/lib/libOpenThreads.dylib,
+					/usr/lib/libz.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libjansson.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/local/lib/libjansson.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "robogen-evolver";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		6A01F026244042D2813F91FA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		6A79A13EF8CE492B9A9DBC9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/build";
+			};
+			name = Release;
+		};
+		7A82B189A29A4A478F3D347E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/MinSizeRel/librobogen.a\"",
+					/usr/local/lib/libode.a,
+					/usr/local/lib/libosg.dylib,
+					/usr/local/lib/libosgViewer.dylib,
+					/usr/local/lib/libosgDB.dylib,
+					/usr/local/lib/libosgGA.dylib,
+					/usr/local/lib/libosgTerrain.dylib,
+					/usr/local/lib/libOpenThreads.dylib,
+					/usr/lib/libz.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libjansson.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/local/lib/libjansson.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "robogen-server-viewer";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		7C08B32926A24CDFB8210B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		7F5E4D2DCECF45E8868BD98E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-g",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DDEBUG",
+					"-ggdb3",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = robogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		812B2CC171414AD8B4794A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-g",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DDEBUG",
+					"-ggdb3",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/Debug/librobogen.a\"",
+					/usr/local/lib/libode.a,
+					/usr/local/lib/libosg.dylib,
+					/usr/local/lib/libosgViewer.dylib,
+					/usr/local/lib/libosgDB.dylib,
+					/usr/local/lib/libosgGA.dylib,
+					/usr/local/lib/libosgTerrain.dylib,
+					/usr/local/lib/libOpenThreads.dylib,
+					/usr/lib/libz.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.dylib,
+					/usr/local/lib/libpng.a,
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libjansson.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.dylib,
+					/usr/local/lib/libpng.a,
+					/usr/local/lib/libjansson.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "robogen-server";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		885B0B8BCF48450DA3DE1157 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/RelWithDebInfo/librobogen.a\"",
+					/usr/local/lib/libode.a,
+					/usr/local/lib/libosg.dylib,
+					/usr/local/lib/libosgViewer.dylib,
+					/usr/local/lib/libosgDB.dylib,
+					/usr/local/lib/libosgGA.dylib,
+					/usr/local/lib/libosgTerrain.dylib,
+					/usr/local/lib/libOpenThreads.dylib,
+					/usr/lib/libz.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libjansson.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/local/lib/libjansson.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "robogen-file-viewer";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		8DD27ED23864474887C9D565 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/RelWithDebInfo/librobogen.a\"",
+					/usr/local/lib/libode.a,
+					/usr/local/lib/libosg.dylib,
+					/usr/local/lib/libosgViewer.dylib,
+					/usr/local/lib/libosgDB.dylib,
+					/usr/local/lib/libosgGA.dylib,
+					/usr/local/lib/libosgTerrain.dylib,
+					/usr/local/lib/libOpenThreads.dylib,
+					/usr/lib/libz.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libjansson.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/local/lib/libjansson.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "robogen-server";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		8F95D9D86968400691EAA557 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = robogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		940E58344D9E4F629E989387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-funroll-loops",
+					"-finline-functions",
+					"-fomit-frame-pointer",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/Release/librobogen.a\"",
+					/usr/local/lib/libode.a,
+					/usr/local/lib/libosg.dylib,
+					/usr/local/lib/libosgViewer.dylib,
+					/usr/local/lib/libosgDB.dylib,
+					/usr/local/lib/libosgGA.dylib,
+					/usr/local/lib/libosgTerrain.dylib,
+					/usr/local/lib/libOpenThreads.dylib,
+					/usr/lib/libz.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libjansson.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/local/lib/libjansson.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "robogen-evolver";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		A6A408244DD54DDA823A5E01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		A9074C7B60A74F97A2831E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-g",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DDEBUG",
+					"-ggdb3",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/Debug/librobogen.a\"",
+					/usr/local/lib/libode.a,
+					/usr/local/lib/libosg.dylib,
+					/usr/local/lib/libosgViewer.dylib,
+					/usr/local/lib/libosgDB.dylib,
+					/usr/local/lib/libosgGA.dylib,
+					/usr/local/lib/libosgTerrain.dylib,
+					/usr/local/lib/libOpenThreads.dylib,
+					/usr/lib/libz.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.dylib,
+					/usr/local/lib/libpng.a,
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libjansson.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.dylib,
+					/usr/local/lib/libpng.a,
+					/usr/local/lib/libjansson.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "robogen-server-viewer";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		B31C66DFA1604FEB9D5DA47B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		B577E38930F44F6689D2E5BC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DNDEBUG",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/RelWithDebInfo/librobogen.a\"",
+					/usr/local/lib/libode.a,
+					/usr/local/lib/libosg.dylib,
+					/usr/local/lib/libosgViewer.dylib,
+					/usr/local/lib/libosgDB.dylib,
+					/usr/local/lib/libosgGA.dylib,
+					/usr/local/lib/libosgTerrain.dylib,
+					/usr/local/lib/libOpenThreads.dylib,
+					/usr/lib/libz.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libjansson.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.a,
+					/usr/local/lib/libpng.a,
+					/usr/local/lib/libjansson.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "robogen-server-viewer";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		B97C3C71EB9D447491384118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/build";
+			};
+			name = Debug;
+		};
+		C4B86450C8684033BB6CC888 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		E384C4534B9A4E23BE41193E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-g",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-march=penryn",
+					"-msse2",
+					"-msse3",
+					"-mssse3",
+					"-msse4.1",
+					"-mno-sse4.2",
+					"-mno-sse4a",
+					"-mno-avx",
+					"-mno-xop",
+					"-mno-fma4",
+					"-DDEBUG",
+					"-ggdb3",
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/Debug/librobogen.a\"",
+					/usr/local/lib/libode.a,
+					/usr/local/lib/libosg.dylib,
+					/usr/local/lib/libosgViewer.dylib,
+					/usr/local/lib/libosgDB.dylib,
+					/usr/local/lib/libosgGA.dylib,
+					/usr/local/lib/libosgTerrain.dylib,
+					/usr/local/lib/libOpenThreads.dylib,
+					/usr/lib/libz.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.dylib,
+					/usr/local/lib/libpng.a,
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libjansson.dylib,
+					"/usr/local/lib/libboost_chrono-mt.a",
+					"/usr/local/lib/libboost_date_time-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_program_options-mt.a",
+					"/usr/local/lib/libboost_regex-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_timer-mt.a",
+					"/usr/local/lib/libboost_thread-mt.a",
+					/usr/local/lib/libprotobuf.dylib,
+					/usr/local/lib/libpng.a,
+					/usr/local/lib/libjansson.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "robogen-evolver";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		E89117B29D074E5AA8054F4A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		FF07017C65414786AF30F343 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/src\"",
+					/usr/local/include,
+					/usr/local,
+					"\"/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-ansi",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wall",
+					"-Wextra",
+					"-Wformat=2",
+					"-Wredundant-decls",
+					"-Wwrite-strings",
+					"-Wmissing-include-dirs",
+					"-Wswitch-enum",
+					"-Wuninitialized",
+					"-Wswitch-default",
+					"-Winit-self",
+					"-Wshadow",
+					"-Wfloat-equal",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C64C76BFCF349D2BEFA564A /* Build configuration list for PBXNativeTarget "robogen-file-viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42937320BE9C4D8981FE6C58 /* Debug */,
+				5DBC92492D9546BBA2958D92 /* Release */,
+				32484517AE6441B58BF99F59 /* MinSizeRel */,
+				885B0B8BCF48450DA3DE1157 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		528D697A98394F8F8A51B2DB /* Build configuration list for PBXNativeTarget "robogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F5E4D2DCECF45E8868BD98E /* Debug */,
+				4A083650253A4618ADF74121 /* Release */,
+				5DA8FF5D0E5C4FF29B3DD0CB /* MinSizeRel */,
+				8F95D9D86968400691EAA557 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7D2E625824384ADD909FDCD5 /* Build configuration list for PBXNativeTarget "robogen-server-viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9074C7B60A74F97A2831E58 /* Debug */,
+				0D943442404A4C8BA7E8039E /* Release */,
+				7A82B189A29A4A478F3D347E /* MinSizeRel */,
+				B577E38930F44F6689D2E5BC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7F191E39FBC942D1B2BD2AB2 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B31C66DFA1604FEB9D5DA47B /* Debug */,
+				33CB123C77884386A7D7C5D6 /* Release */,
+				FF07017C65414786AF30F343 /* MinSizeRel */,
+				E89117B29D074E5AA8054F4A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		98BEDA25D4A34050A95FD7C5 /* Build configuration list for PBXNativeTarget "robogen-server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				812B2CC171414AD8B4794A92 /* Debug */,
+				2E67ED629B7A418E881A197F /* Release */,
+				29F4D7A38B7947CB88A5BE4D /* MinSizeRel */,
+				8DD27ED23864474887C9D565 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A5BAA94496A74C1DA6DA0EAF /* Build configuration list for PBXNativeTarget "robogen-evolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E384C4534B9A4E23BE41193E /* Debug */,
+				940E58344D9E4F629E989387 /* Release */,
+				68C8B5A6443345C7AA58BA9B /* MinSizeRel */,
+				6657ED2CC2784D34A8FC2C20 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A8B2C54146B841F1A346B3D0 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A408244DD54DDA823A5E01 /* Debug */,
+				7C08B32926A24CDFB8210B9F /* Release */,
+				C4B86450C8684033BB6CC888 /* MinSizeRel */,
+				6A01F026244042D2813F91FA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EA25EC3AB90D4E89853B05F0 /* Build configuration list for PBXProject "RoboGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97C3C71EB9D447491384118 /* Debug */,
+				6A79A13EF8CE492B9A9DBC9A /* Release */,
+				4177B403F9564AE3B7037091 /* MinSizeRel */,
+				45AC5B6AB3C246899B9670A9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E244BDB5B4D4BBC97DD4E1C /* Project object */;
+}
