@@ -1,4 +1,4 @@
-scenario=chasing
+scenario=climbing
 timeStep=0.002
 nTimeSteps=4000
 terrainType=flat
