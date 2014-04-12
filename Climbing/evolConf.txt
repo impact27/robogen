@@ -1,0 +1,16 @@
+simulatorConfFile=conf.txt
+referenceRobotFile=simpleRobot.txt
+mu=5
+lambda=5
+selection=deterministic-tournament
+replacement=plus
+tournamentSize=2
+numGenerations=100
+evolutionMode=brain
+pBrainMutate=.3
+brainSigma=.7
+brainBounds=-3:3
+pBrainCrossover=.6
+socket=127.0.0.1:8001
+#socket=127.0.0.1:8002
+#socket=127.0.0.1:8003

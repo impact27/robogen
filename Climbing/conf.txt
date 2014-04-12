@@ -1,0 +1,11 @@
+scenario=climbing
+timeStep=0.002
+nTimeSteps=4000
+terrainType=flat
+terrainLength=2
+terrainWidth=2
+obstaclesConfigFile=stairs.txt
+startPositionConfigFile=startPos.txt
+lightSourceHeight=1
+lightSourceX=0
+lightSourceY=1
