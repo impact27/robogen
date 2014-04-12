@@ -6,10 +6,10 @@
 //
 //
 
-#include "ClimbingScenario.h"
 #include "config/RobogenConfig.h"
 #include "config/StartPositionConfig.h"
 #include "scenario/Environment.h"
+#include "scenario/ClimbingScenario.h"
 #include "Robot.h"
 #include "Models.h"
 
