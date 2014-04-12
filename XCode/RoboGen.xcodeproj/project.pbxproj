@@ -66,7 +66,6 @@
 		48EEC199AAB94E54846F09CD /* ActiveWheelRenderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90CD67E11D2449E38780DE72 /* ActiveWheelRenderModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 		4EFA04FADF8848B7B7C0FC4F /* ParametricBrickModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFEA8C5EA5FE4944AC00899C /* ParametricBrickModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 		51554A75183D4069BC508C6D /* CardanCrossCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F29D26F6C8E448A7A6C1A737 /* CardanCrossCallback.cpp */; settings = {COMPILER_FLAGS = ""; }; };
-		547D1D5235FF4872AA2723C7 /* ClimbingScenario.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83B393F65084457AB0CA863E /* ClimbingScenario.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 		5608E02BC9014663B97FB6BA /* Motor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA423F3C0A474D709DCF0C6F /* Motor.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 		5657766CE1D84084BD366FE0 /* BodyCompiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 165DF183D8D240F2846023AA /* BodyCompiler.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 		574E2378D3CB42618A958A32 /* CardanModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD58636A05BE4E4B8AE700A3 /* CardanModel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
@@ -657,6 +656,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = EA25EC3AB90D4E89853B05F0 /* Build configuration list for PBXProject "RoboGen" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -808,7 +808,6 @@
 				6C8C32859109495490C01DF7 /* LightSourceRender.cpp in Sources */,
 				978E536E832C4F549E084AB0 /* TerrainRender.cpp in Sources */,
 				6BE85F64ECC24BBA98FF53DD /* ChasingScenario.cpp in Sources */,
-				547D1D5235FF4872AA2723C7 /* ClimbingScenario.cpp in Sources */,
 				9B71909E4225462F8B5988D5 /* RacingScenario.cpp in Sources */,
 				4610FC90D5774D18992C6252 /* Scenario.cpp in Sources */,
 				3B73F0FE52864789B4DFFE12 /* ScenarioFactory.cpp in Sources */,
@@ -1484,7 +1483,6 @@
 		4177B403F9564AE3B7037091 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
 				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/build";
@@ -1623,7 +1621,6 @@
 		45AC5B6AB3C246899B9670A9 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
 				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/build";
@@ -2255,7 +2252,6 @@
 		6A79A13EF8CE492B9A9DBC9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
 				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/build";
@@ -3494,7 +3490,6 @@
 		B97C3C71EB9D447491384118 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
 				SYMROOT = "/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/XCode/build";

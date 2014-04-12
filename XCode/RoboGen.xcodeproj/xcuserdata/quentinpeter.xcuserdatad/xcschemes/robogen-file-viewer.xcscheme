@@ -57,6 +57,16 @@
             ReferencedContainer = "container:../XCode/RoboGen.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "&quot;/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/examples/simpleRobot.txt&quot;"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "&quot;/Users/quentinpeter/Documents/Ecole/EFFL MA2/BIAI/Projet_BIAI/robogen/examples/conf.txt&quot;"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
