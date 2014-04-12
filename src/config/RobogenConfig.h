@@ -56,13 +56,15 @@ public:
 			boost::shared_ptr<ObstaclesConfig> obstacles,
 			std::string obstacleFile,
 			boost::shared_ptr<StartPositionConfig> startPositions,
-			std::string startPosFile, float lightSourceHeight) :
+			std::string startPosFile, float lightSourceHeight,float lightSourceX,float lightSourceY) :
 			scenario_(scenario), timeSteps_(timeSteps), timeStepLength_(
 					timeStepLength), terrain_(terrain), obstacles_(obstacles),
 					obstacleFile_(obstacleFile),
 					startPositions_(startPositions),
 					startPosFile_(startPosFile),
-					lightSourceHeight_(lightSourceHeight) {
+					lightSourceHeight_(lightSourceHeight),
+					lightSourceX_(lightSourceX),
+					lightSourceY_(lightSourceY){
 
 		simulationTime_ = timeSteps * timeStepLength;
 
@@ -149,6 +151,18 @@ public:
 	float getLightSourceHeight(){
 		return lightSourceHeight_;
 	}
+	/**
+	 * @return the desired height of the light source
+	 */
+	float getLightSourceX(){
+		return lightSourceX_;
+	}
+	/**
+	 * @return the desired height of the light source
+	 */
+	float getLightSourceY(){
+		return lightSourceY_;
+	}
 
 	/**
 	 * Convert configuration into configuration message.
@@ -156,6 +170,8 @@ public:
 	robogenMessage::SimulatorConf serialize() const{
 		robogenMessage::SimulatorConf ret;
 		ret.set_lightsourceheight(lightSourceHeight_);
+		ret.set_lightsourcex(lightSourceX_);
+		ret.set_lightsourcey(lightSourceY_);
 		ret.set_ntimesteps(timeSteps_);
 		if (scenario_ == CHASING) {
 			ret.set_scenario("chasing");
@@ -216,6 +232,8 @@ private:
 	 * Height of light source in chasing scenario
 	 */
 	float lightSourceHeight_;
+	float lightSourceX_;
+	float lightSourceY_;
 
 	/**
 	 * Simulation time

@@ -39,6 +39,8 @@
 #include "config/TerrainConfig.h"
 
 #define DEFAULT_LIGHT_SOURCE_HEIGHT (0.1)
+#define DEFAULT_LIGHT_SOURCE_X (0)
+#define DEFAULT_LIGHT_SOURCE_Y (0)
 #define DEFAULT_OBSTACLE_DENSITY (0.)
 
 namespace robogen {
@@ -61,7 +63,12 @@ boost::shared_ptr<RobogenConfig> ConfigurationReader::parseConfigurationFile(
 			"Obstacles configuration file")("scenario",
 			boost::program_options::value<std::string>(), "Experiment scenario")(
 			"lightSourceHeight", boost::program_options::value<float>(),
-			"Height of light source")("timeStep",
+			"Height of light source")
+			("lightSourceX", boost::program_options::value<float>(),
+			"X position of light source")
+			("lightSourceY", boost::program_options::value<float>(),
+			"Y position of light source")
+			("timeStep",
 			boost::program_options::value<float>(), "Time step duration")(
 			"nTimeSteps", boost::program_options::value<unsigned int>(),
 			"Number of timesteps")("startPositionConfigFile",
@@ -219,6 +226,16 @@ boost::shared_ptr<RobogenConfig> ConfigurationReader::parseConfigurationFile(
 	if (vm.count("lightSourceHeight")) {
 		lightSourceHeight = vm["lightSourceHeight"].as<float>();
 	}
+	
+	float lightSourceX = DEFAULT_LIGHT_SOURCE_X;
+	if (vm.count("lightSourceX")) {
+		lightSourceX = vm["lightSourceX"].as<float>();
+	}
+	
+	float lightSourceY = DEFAULT_LIGHT_SOURCE_Y;
+	if (vm.count("lightSourceY")) {
+		lightSourceY = vm["lightSourceY"].as<float>();
+	}
 
 	if (!vm.count("timeStep")) {
 		std::cout << "Undefined 'timeStep' parameter in '" << fileName << "'"
@@ -237,7 +254,7 @@ boost::shared_ptr<RobogenConfig> ConfigurationReader::parseConfigurationFile(
 	return boost::shared_ptr<RobogenConfig>(
 			new RobogenConfig(simulationScenario, nTimesteps, timeStep, terrain,
 					obstacles, obstaclesConfigFile, startPositions,
-					startPositionFile, lightSourceHeight));
+					startPositionFile, lightSourceHeight, lightSourceX, lightSourceY));
 
 }
 
@@ -386,13 +403,15 @@ boost::shared_ptr<RobogenConfig> ConfigurationReader::parseRobogenMessage(
 	unsigned int timeSteps = simulatorConf.ntimesteps();
 	float timeStepLength = simulatorConf.timestep();
 	float lightSourceHeight = simulatorConf.lightsourceheight();
+	float lightSourceX = simulatorConf.lightsourcex();
+	float lightSourceY = simulatorConf.lightsourcey();
 
 	return boost::shared_ptr<RobogenConfig>(
 			new RobogenConfig(simulationScenario, timeSteps, timeStepLength, terrain,
 					obstacles, "",
 					boost::shared_ptr<StartPositionConfig>(
 							new StartPositionConfig(startPositions)), "",
-					lightSourceHeight
+					lightSourceHeight, lightSourceX, lightSourceY
 
 					));
 

@@ -1,4 +1,4 @@
-scenario=racing
+scenario=chasing
 timeStep=0.002
 nTimeSteps=4000
 terrainType=flat
