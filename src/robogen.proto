@@ -73,6 +73,8 @@ message SimulatorConf {
   required float timeStep = 6;
   required int32 nTimeSteps = 7;
   repeated StartPosition startPositions = 8;
+  required float lightSourceX = 9;
+  required float lightSourceY = 10;
 }
 
 message EvaluationRequest {
