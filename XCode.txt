@@ -1,0 +1,5 @@
+in the installation folder:
+git clone https://github.com/impact27/robogen.git
+mkdir XCodeRobogen
+cd XCodeRobogen
+cmake -G Xcode -DCMAKE_BUILD_TYPE=Release ../robogen/src/
