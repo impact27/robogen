@@ -63,10 +63,8 @@ bool Mesh::loadMesh(const std::string& mesh) {
 	yLen_ = bb.yMax() - bb.yMin();
 	zLen_ = bb.zMax() - bb.zMin();
 	
-	
-	osg::Geometry* geom = meshNode_->asGroup()->getChild(0)->asGeode()->getDrawable(0)->asGeometry();
 	osgUtil::SmoothingVisitor sv;
-	sv.smooth(*geom);
+	meshNode_->accept(sv);
 
 	return true;
 
