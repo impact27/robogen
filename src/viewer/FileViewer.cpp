@@ -418,11 +418,6 @@ int main(int argc, char *argv[]) {
 	// Setup OSG viewer
 	// ---------------------------------------
 
-//	osg::ref_ptr<osg::PolygonMode> pm = new osg::PolygonMode;
-//	pm->setMode(osg::PolygonMode::FRONT_AND_BACK,osg::PolygonMode::LINE);
-//	root->getOrCreateStateSet()->setAttribute(pm);
-//	osg::StateAttribute
-//	root->getOrCreateStateSet()->setTextureAttributeAndModes(<#unsigned int unit#>, <#osg::StateAttribute *attribute#>);
 	viewer.setSceneData(root.get());
 
 	viewer.realize();

@@ -28,6 +28,7 @@
 #include "render/Mesh.h"
 #include <osgDB/ReadFile>
 #include <osg/Version>
+#include <osgUtil/SmoothingVisitor>
 
 namespace robogen {
 
@@ -61,6 +62,11 @@ bool Mesh::loadMesh(const std::string& mesh) {
 	xLen_ = bb.xMax() - bb.xMin();
 	yLen_ = bb.yMax() - bb.yMin();
 	zLen_ = bb.zMax() - bb.zMin();
+	
+	
+	osg::Geometry* geom = meshNode_->asGroup()->getChild(0)->asGeode()->getDrawable(0)->asGeometry();
+	osgUtil::SmoothingVisitor sv;
+	sv.smooth(*geom);
 
 	return true;
 
